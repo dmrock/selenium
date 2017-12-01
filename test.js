@@ -2,7 +2,7 @@ var webdriver = require('selenium-webdriver'),
     chrome = require('selenium-webdriver/chrome'),
     test = require('selenium-webdriver/testing');
 
-test.describe('Google Search', function() {
+test.describe('Open browser page', function() {
     var driver;
 
     test.before(function() {
@@ -18,7 +18,7 @@ test.describe('Google Search', function() {
         });
     });
 
-    test.it('should append query to title', function() {
+    test.it('should open google search page', function() {
         driver.get('http://www.google.com');
     });
 
